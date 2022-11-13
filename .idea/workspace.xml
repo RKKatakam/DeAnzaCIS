@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f532db75-4185-4d8d-a128-9e9f2e3179e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Persons/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Persons/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS36B/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Course/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Course/CourseLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/People/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Persons/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/People/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/Persons/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS36B/Lab3CourseMangment/src/main/java/Main/People/Professor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RunManager">
@@ -82,6 +80,7 @@
       <updated>1666398160395</updated>
       <workItem from="1666398162381" duration="179000" />
       <workItem from="1666398347390" duration="508000" />
+      <workItem from="1668297358502" duration="8493000" />
     </task>
     <servers />
   </component>
