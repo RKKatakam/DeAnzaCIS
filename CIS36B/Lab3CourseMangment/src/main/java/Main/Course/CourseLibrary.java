@@ -1,5 +1,6 @@
 package Main.Course;
 
+import Main.People.Student;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -69,7 +70,6 @@ public class CourseLibrary {
         MultiFieldQueryParser queryParser = new MultiFieldQueryParser(new String[]{"name", "description", "id"}, analyzer );
 
         try {
-
             IndexReader indexReader = DirectoryReader.open(memoryIndex);
             IndexSearcher searcher = new IndexSearcher(indexReader);
 
@@ -83,5 +83,17 @@ public class CourseLibrary {
         }
 
         return documents;
+    }
+
+    public void enrollStudent(Student student, Course course){
+        course.addStudent(student);
+    }
+
+    public void dropStudent(Student student, Course course) {
+        course.dropStudent(student);
+    }
+
+    public List<Course> getAllCourses(){
+        return new ArrayList<>(courseHashMap.values());
     }
 }

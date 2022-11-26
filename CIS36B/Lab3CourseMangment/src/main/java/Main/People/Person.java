@@ -1,5 +1,6 @@
 package Main.People;
 
+import java.util.Objects;
 import java.util.UUID;
 
 public class Person {
@@ -26,5 +27,19 @@ public class Person {
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+        Person person = (Person) o;
+        return getName().equals(person.getName()) && getId().equals(person.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getId());
     }
 }
