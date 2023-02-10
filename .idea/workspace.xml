@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="Finished SinglyLinkedList and the Tests">
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/StackTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StackTest">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest">
+    <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CIS22C" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SinglyLinkedListTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,51 +92,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.deleteAtPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.insertAtBack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="deleteAtPosition" />
+      <option name="METHOD_NAME" value="insertAtBack" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.insertAtFront" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="find" />
+      <option name="METHOD_NAME" value="insertAtFront" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.getCurrency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.insertAtPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="getCurrency" />
+      <option name="METHOD_NAME" value="insertAtPosition" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CIS22C" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StackTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StackTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.getCurrency" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.find" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.deleteAtPosition" />
+        <item itemvalue="JUnit.SinglyLinkedListTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertAtBack" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertAtPosition" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertAtFront" />
         <item itemvalue="JUnit.SinglyLinkedListTest.delete" />
       </list>
     </recent_temporary>
@@ -143,6 +142,7 @@
       <updated>1675976054854</updated>
       <workItem from="1675976055970" duration="6081000" />
       <workItem from="1675997830461" duration="4414000" />
+      <workItem from="1676056868690" duration="635000" />
     </task>
     <task id="LOCAL-00001" summary="first Commit">
       <created>1675998705843</created>
