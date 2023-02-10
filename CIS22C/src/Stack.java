@@ -13,7 +13,7 @@ public class Stack extends SinglyLinkedList {
         insertAtFront(data);
     }
     public Currency pop() {
-        Currency data = getHead().getData();
+        Currency data = getHead().getData().clone();
         deleteAtFront();
         return data;
     }

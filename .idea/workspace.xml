@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="first Commit">
+    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="Finished SinglyLinkedList and the Tests">
+      <change afterPath="$PROJECT_DIR$/CIS22C/src/StackTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -73,16 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.getCurrency">
-    <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CIS22C" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StackTest">
     <configuration name="SinglyLinkedListTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,13 +114,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CIS22C" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StackTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StackTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest.getCurrency" />
         <item itemvalue="JUnit.SinglyLinkedListTest.find" />
         <item itemvalue="JUnit.SinglyLinkedListTest.deleteAtPosition" />
         <item itemvalue="JUnit.SinglyLinkedListTest.delete" />
-        <item itemvalue="JUnit.SinglyLinkedListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675976054854</updated>
       <workItem from="1675976055970" duration="6081000" />
-      <workItem from="1675997830461" duration="3011000" />
+      <workItem from="1675997830461" duration="4414000" />
     </task>
     <task id="LOCAL-00001" summary="first Commit">
       <created>1675998705843</created>
@@ -151,14 +151,49 @@
       <option name="project" value="LOCAL" />
       <updated>1675998705843</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished SinglyLinkedList and the Tests">
+      <created>1676001271296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676001271296</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first Commit" />
+    <MESSAGE value="Finished SinglyLinkedList and the Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished SinglyLinkedList and the Tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CIS22C/src/Stack.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

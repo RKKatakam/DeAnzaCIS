@@ -131,6 +131,11 @@ public abstract class Currency {
      * post: returns a string representation of the value of the calling object and the type of currency
      */
     public void print() {
-        System.out.println(this.wholePart + "." + this.fractionalPart + " " + this.getCurrencyName());
+        System.out.println(this);
+    }
+
+    @Override
+    public String toString() {
+        return this.wholePart + "." + this.fractionalPart + " " + this.getCurrencyName();
     }
 }
