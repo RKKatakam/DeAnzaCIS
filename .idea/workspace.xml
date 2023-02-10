@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/CIS22C.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/CurrencyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/Krone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/LinkNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/Soum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeAnza.iml" afterDir="false" />
+    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="first Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.getCurrency">
     <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,41 +83,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.deleteAtBack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="deleteAtBack" />
+      <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.deleteAtFront" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.deleteAtPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="deleteAtFront" />
+      <option name="METHOD_NAME" value="deleteAtPosition" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.insertAtBack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="insertAtBack" />
+      <option name="METHOD_NAME" value="find" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.insertAtPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.getCurrency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="insertAtPosition" />
+      <option name="METHOD_NAME" value="getCurrency" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.getCurrency" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.find" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.deleteAtPosition" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.delete" />
         <item itemvalue="JUnit.SinglyLinkedListTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.deleteAtBack" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.deleteAtFront" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.insertAtBack" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.insertAtPosition" />
       </list>
     </recent_temporary>
   </component>
@@ -156,11 +142,23 @@
       <option name="presentableId" value="Default" />
       <updated>1675976054854</updated>
       <workItem from="1675976055970" duration="6081000" />
-      <workItem from="1675997830461" duration="691000" />
+      <workItem from="1675997830461" duration="3011000" />
     </task>
+    <task id="LOCAL-00001" summary="first Commit">
+      <created>1675998705843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675998705843</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first Commit" />
   </component>
 </project>

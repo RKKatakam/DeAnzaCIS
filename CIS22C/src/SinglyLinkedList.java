@@ -103,46 +103,111 @@ public class SinglyLinkedList {
         }
     }
 
-    public void deleteAtPosition(int position) {
+    public Currency deleteAtPosition(int position) {
+        Currency deleted;
+
         if (position < 0 || position >= count) {
             throw new IndexOutOfBoundsException("Invalid position");
         } else if (position == 0) {
+            deleted = head.getData();
             deleteAtFront();
+            return deleted;
         } else if (position == count - 1) {
+            deleted = tail.getData();
             deleteAtBack();
+            return deleted;
         } else {
             LinkNode current = head;
             for (int i = 0; i < position - 1; i++) {
                 current = current.getNext();
             }
+            deleted = current.getNext().getData();
             current.setNext(current.getNext().getNext());
             count--;
+            return deleted;
         }
     }
 
 
-    public void delete(Currency currency){
+    public Currency delete(Currency currency) {
         LinkNode current = head;
         LinkNode previous = null;
-        while(current != null){
-            boolean isEquals = false;
-           try {
+        while (current != null) {
+            boolean isEquals;
+            try {
                 isEquals = current.getData().isEquals(currency);
-           } catch (Exception e) {
-              continue;
-           }
-            if(isEquals){
-                if(previous == null){
+            } catch (Exception e) {
+                continue;
+            }
+            if (isEquals) {
+                if (previous == null) {
                     deleteAtFront();
-                }else{
+                } else {
+                    Currency deleted = current.getData();
                     previous.setNext(current.getNext());
                     count--;
+                    return deleted;
                 }
                 break;
             }
             previous = current;
             current = current.getNext();
         }
+
+        return null;
     }
 
+    public int find(Currency currency) {
+        LinkNode current = head;
+        int position = 0;
+        while (current != null) {
+            boolean isEquals;
+            try {
+                isEquals = current.getData().isEquals(currency);
+            } catch (Exception e) {
+                continue;
+            }
+            if (isEquals) {
+                return position;
+            }
+            current = current.getNext();
+            position++;
+        }
+        return -1;
+    }
+
+    public Currency getCurrency(int index) {
+        if (index < 0 || index >= count) {
+            throw new IndexOutOfBoundsException("Invalid position");
+        } else {
+            LinkNode current = head;
+            for (int i = 0; i < index; i++) {
+                current = current.getNext();
+            }
+            return current.getData();
+        }
+    }
+
+    public String printList() {
+        StringBuilder result = new StringBuilder();
+        LinkNode current = head;
+        while (current != null) {
+            result.append(current.getData().toString()).append("\t");
+            current = current.getNext();
+        }
+
+        return result.toString();
+    }
+
+    public void isListEmpty() {
+        if (head == null) {
+            System.out.println("List is empty");
+        } else {
+            System.out.println("List is not empty");
+        }
+    }
+
+    public int countCurrency(){
+        return count;
+    }
 }

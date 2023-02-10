@@ -4,17 +4,36 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SinglyLinkedListTest {
 
-    @Test
-    void insertAtFront() {
+    public SinglyLinkedList getInitialSetup() {
         SinglyLinkedList list = new SinglyLinkedList();
-        assertNull(list.getHead());
-
-
+        list.insertAtFront(new Krone(1.42));
         list.insertAtFront(new Krone(1.43));
         list.insertAtFront(new Krone(1.44));
         list.insertAtFront(new Krone(1.45));
         list.insertAtFront(new Krone(1.46));
 
+        return list;
+    }
+
+    public Currency getCurrencyAt(int position, SinglyLinkedList list) {
+        if (position < 0 || position >= list.getCount()) {
+            throw new IndexOutOfBoundsException();
+        }
+
+        LinkNode current = list.getHead();
+        for (int i = 0; i < position; i++) {
+            current = current.getNext();
+        }
+
+        return current.getData();
+    }
+
+    @Test
+    void insertAtFront() {
+        SinglyLinkedList list = new SinglyLinkedList();
+        assertNull(list.getHead());
+
+        list = getInitialSetup();
         assertEquals(1, list.getHead().getData().getWholePart());
         assertEquals(46, list.getHead().getData().getFractionalPart());
 
@@ -38,26 +57,22 @@ class SinglyLinkedListTest {
         assertEquals(3, list.getTail().getData().getWholePart());
         assertEquals(47, list.getTail().getData().getFractionalPart());
 
-        assertEquals(3, list.getHead().getNext().getNext().getNext().getNext().getData().getWholePart());
-        assertEquals(47, list.getHead().getNext().getNext().getNext().getNext().getData().getFractionalPart());
+        assertEquals(3, getCurrencyAt(4, list).getWholePart());
+        assertEquals(47, getCurrencyAt(4, list).getFractionalPart());
 
-        assertNull(list.getHead().getNext().getNext().getNext().getNext().getNext());
+        assertNull(getCurrencyAt(6, list));
 
         assertEquals(5, list.getCount());
     }
 
     @Test
     void insertAtPosition() {
-        SinglyLinkedList list = new SinglyLinkedList();
-        list.insertAtFront(new Krone(1.43));
-        list.insertAtFront(new Krone(1.44));
-        list.insertAtFront(new Krone(1.45));
-        list.insertAtFront(new Krone(1.46));
+        SinglyLinkedList list = getInitialSetup();
 
 
         list.insertAtPosition(new Krone(2.47), 3);
-        assertEquals(2, list.getHead().getNext().getNext().getNext().getData().getWholePart());
-        assertEquals(47, list.getHead().getNext().getNext().getNext().getData().getFractionalPart());
+        assertEquals(2, getCurrencyAt(3, list).getWholePart());
+        assertEquals(47, getCurrencyAt(3, list).getFractionalPart());
 
         assertEquals(5, list.getCount());
 
@@ -66,12 +81,8 @@ class SinglyLinkedListTest {
 
 
     @Test
-    void deleteAtFront(){
-        SinglyLinkedList list = new SinglyLinkedList();
-        list.insertAtFront(new Krone(1.43));
-        list.insertAtFront(new Krone(1.44));
-        list.insertAtFront(new Krone(1.45));
-        list.insertAtFront(new Krone(1.46));
+    void deleteAtFront() {
+        SinglyLinkedList list = getInitialSetup();
 
         list.deleteAtFront();
         assertEquals(1, list.getHead().getData().getWholePart());
@@ -82,12 +93,8 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void deleteAtBack(){
-        SinglyLinkedList list = new SinglyLinkedList();
-        list.insertAtFront(new Krone(1.43));
-        list.insertAtFront(new Krone(1.44));
-        list.insertAtFront(new Krone(1.45));
-        list.insertAtFront(new Krone(1.46));
+    void deleteAtBack() {
+        SinglyLinkedList list = getInitialSetup();
 
         list.deleteAtBack();
         assertEquals(1, list.getTail().getData().getWholePart());
@@ -95,5 +102,88 @@ class SinglyLinkedListTest {
         assertEquals(3, list.getCount());
 
         assertThrows(IndexOutOfBoundsException.class, () -> new SinglyLinkedList().deleteAtBack());
+    }
+
+
+    @Test
+    void deleteAtPosition() {
+        SinglyLinkedList list = getInitialSetup();
+
+
+        list.deleteAtPosition(3);
+        assertEquals(1, getCurrencyAt(3, list).getWholePart());
+        assertEquals(42, getCurrencyAt(3, list).getFractionalPart());
+        assertEquals(4, list.getCount());
+
+        Currency tmp = list.deleteAtPosition(1);
+        assertEquals(1, tmp.getWholePart());
+        assertEquals(45, tmp.getFractionalPart());
+
+
+        assertThrows(IndexOutOfBoundsException.class, () -> new SinglyLinkedList().deleteAtPosition(-1));
+        assertThrows(IndexOutOfBoundsException.class, () -> new SinglyLinkedList().deleteAtPosition(100));
+    }
+
+    @Test
+    void delete() {
+        SinglyLinkedList list = getInitialSetup();
+
+        list.delete(new Krone(1.44));
+        assertEquals(1, getCurrencyAt(2, list).getWholePart());
+        assertEquals(43, getCurrencyAt(2, list).getFractionalPart());
+        assertEquals(3, list.getCount());
+
+        list.delete(new Krone(1.46));
+        assertEquals(1, list.getHead().getData().getWholePart());
+        assertEquals(45, list.getHead().getData().getFractionalPart());
+        assertEquals(2, list.getCount());
+
+        list.delete(new Krone(1.45));
+        assertEquals(1, list.getHead().getData().getWholePart());
+        assertEquals(43, list.getHead().getData().getFractionalPart());
+        assertEquals(1, list.getCount());
+
+        list.delete(new Krone(1.43));
+        assertNull(list.getHead());
+        assertEquals(0, list.getCount());
+
+        assertNull(list.delete(new Krone(1.43)));
+
+    }
+
+    @Test
+    public void find() {
+        SinglyLinkedList list = getInitialSetup();
+
+        assertEquals(0, list.find(new Krone(1.46)));
+        assertEquals(1, list.find(new Krone(1.45)));
+        assertEquals(2, list.find(new Krone(1.44)));
+        assertEquals(3, list.find(new Krone(1.43)));
+        assertEquals(4, list.find(new Krone(1.42)));
+
+        assertEquals(-1, list.find(new Krone(1.47)));
+    }
+
+    @Test
+    public void getCurrency(){
+        SinglyLinkedList list = getInitialSetup();
+
+        assertEquals(1, list.getCurrency(0).getWholePart());
+        assertEquals(46, list.getCurrency(0).getFractionalPart());
+
+        assertEquals(1, list.getCurrency(1).getWholePart());
+        assertEquals(45, list.getCurrency(1).getFractionalPart());
+
+        assertEquals(1, list.getCurrency(2).getWholePart());
+        assertEquals(44, list.getCurrency(2).getFractionalPart());
+
+        assertEquals(1, list.getCurrency(3).getWholePart());
+        assertEquals(43, list.getCurrency(3).getFractionalPart());
+
+        assertEquals(1, list.getCurrency(4).getWholePart());
+        assertEquals(42, list.getCurrency(4).getFractionalPart());
+
+        assertThrows(IndexOutOfBoundsException.class, () -> list.getCurrency(-1));
+        assertThrows(IndexOutOfBoundsException.class, () -> list.getCurrency(5));
     }
 }
