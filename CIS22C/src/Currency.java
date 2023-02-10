@@ -14,11 +14,6 @@ public abstract class Currency {
         fractionalPart = Math.round((float) ((value - wholePart) * 100)); // had to use Math.round to get the correct value
     }
 
-    public Currency(Currency currency) {
-        this.wholePart = currency.wholePart;
-        this.fractionalPart = currency.fractionalPart;
-    }
-
     // Getters
     /* pre: none
      * post: returns a value from currency

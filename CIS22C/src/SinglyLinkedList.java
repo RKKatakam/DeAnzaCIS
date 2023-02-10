@@ -192,19 +192,16 @@ public class SinglyLinkedList {
         StringBuilder result = new StringBuilder();
         LinkNode current = head;
         while (current != null) {
-            result.append(current.getData().toString()).append("\t");
+            result.append(current.getData().toString());
+            result.append("\t");
             current = current.getNext();
         }
 
         return result.toString();
     }
 
-    public void isListEmpty() {
-        if (head == null) {
-            System.out.println("List is empty");
-        } else {
-            System.out.println("List is not empty");
-        }
+    public boolean isListEmpty() {
+        return head == null;
     }
 
     public int countCurrency(){
