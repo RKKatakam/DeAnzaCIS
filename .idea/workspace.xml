@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="Fixed SinglyLinkedTest bugs">
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CIS22C/src/QueueTest.java" afterDir="false" />
+    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="early version of Main finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Currency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CIS22C/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/QueueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CIS22C/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CIS22C/src/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/StackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,6 +55,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kittu/OneDrive/Desktop/lab3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -85,19 +87,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="CIS22C" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QueueTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
+      <option name="MAIN_CLASS_NAME" value="QueueTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,12 +113,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.insertAtPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CIS22C" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="insertAtPosition" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="StackTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,10 +125,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SinglyLinkedListTest" />
-        <item itemvalue="JUnit.QueueTest" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.SinglyLinkedListTest.insertAtBack" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.insertAtPosition" />
+        <item itemvalue="JUnit.StackTest" />
+        <item itemvalue="JUnit.QueueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +142,11 @@
       <updated>1675976054854</updated>
       <workItem from="1675976055970" duration="6081000" />
       <workItem from="1675997830461" duration="4414000" />
-      <workItem from="1676056868690" duration="5635000" />
+      <workItem from="1676056868690" duration="8370000" />
+      <workItem from="1676324116550" duration="80000" />
+      <workItem from="1676416302681" duration="4446000" />
+      <workItem from="1676486460173" duration="2236000" />
+      <workItem from="1676505788802" duration="4162000" />
     </task>
     <task id="LOCAL-00001" summary="first Commit">
       <created>1675998705843</created>
@@ -166,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676057593353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="early version of Main finished">
+      <created>1676062744760</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676062744760</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,17 +197,7 @@
     <MESSAGE value="first Commit" />
     <MESSAGE value="Finished SinglyLinkedList and the Tests" />
     <MESSAGE value="Fixed SinglyLinkedTest bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed SinglyLinkedTest bugs" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CIS22C/src/Queue.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="early version of Main finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="early version of Main finished" />
   </component>
 </project>

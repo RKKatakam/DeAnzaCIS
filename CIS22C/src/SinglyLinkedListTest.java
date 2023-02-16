@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SinglyLinkedListTest {
 
-    public SinglyLinkedList getInitialSetup() {
+    public SinglyLinkedList getInitialSetup() throws Exception {
         SinglyLinkedList list = new SinglyLinkedList();
         list.insertAtFront(new Krone(1.42));
         list.insertAtFront(new Krone(1.43));
@@ -15,7 +15,7 @@ class SinglyLinkedListTest {
         return list;
     }
 
-    public Currency getCurrencyAt(int position, SinglyLinkedList list) {
+    public Currency getCurrencyAt(int position, SinglyLinkedList list) throws Exception {
         if (position < 0 || position >= list.getCount()) {
             throw new IndexOutOfBoundsException();
         }
@@ -29,7 +29,7 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void insertAtFront() {
+    void insertAtFront() throws Exception {
         SinglyLinkedList list = new SinglyLinkedList();
         assertNull(list.getHead());
 
@@ -41,7 +41,7 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void insertAtBack() {
+    void insertAtBack() throws Exception {
         SinglyLinkedList list = new SinglyLinkedList();
 
 
@@ -66,7 +66,7 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void insertAtPosition() {
+    void insertAtPosition() throws Exception {
         SinglyLinkedList list = getInitialSetup();
 
 
@@ -81,7 +81,7 @@ class SinglyLinkedListTest {
 
 
     @Test
-    void deleteAtFront() {
+    void deleteAtFront() throws Exception {
         SinglyLinkedList list = getInitialSetup();
 
         list.deleteAtFront();
@@ -93,7 +93,7 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void deleteAtBack() {
+    void deleteAtBack() throws Exception {
         SinglyLinkedList list = getInitialSetup();
 
         list.deleteAtBack();
@@ -106,7 +106,7 @@ class SinglyLinkedListTest {
 
 
     @Test
-    void deleteAtPosition() {
+    void deleteAtPosition() throws Exception {
         SinglyLinkedList list = getInitialSetup();
 
 
@@ -125,7 +125,7 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    void delete() {
+    void delete() throws Exception {
         SinglyLinkedList list = getInitialSetup();
 
         list.delete(new Krone(1.44));
@@ -152,7 +152,7 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    public void find() {
+    public void find() throws Exception {
         SinglyLinkedList list = getInitialSetup();
 
         assertEquals(0, list.find(new Krone(1.46)));
@@ -165,7 +165,7 @@ class SinglyLinkedListTest {
     }
 
     @Test
-    public void getCurrency(){
+    public void getCurrency() throws Exception {
         SinglyLinkedList list = getInitialSetup();
 
         assertEquals(1, list.getCurrency(0).getWholePart());

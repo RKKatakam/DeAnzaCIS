@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StackTest {
 
-  public Stack createStack() {
+  public Stack createStack() throws Exception {
         Stack stack = new Stack();
         stack.push(new Krone(1.0));
         stack.push(new Krone(2.0));
@@ -14,7 +14,7 @@ class StackTest {
     }
 
     @Test
-    void pop() {
+    void pop() throws Exception {
         Stack stack = createStack();
 
         Currency tester = stack.pop();
@@ -32,7 +32,7 @@ class StackTest {
     }
 
     @Test
-    void peek() {
+    void peek() throws Exception {
         Stack stack = createStack();
 
         assertEquals(4.0, stack.peek().getWholePart() + stack.peek().getFractionalPart() / 100.0);

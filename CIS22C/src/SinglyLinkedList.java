@@ -13,11 +13,11 @@ public class SinglyLinkedList {
         return count;
     }
 
-    public LinkNode getHead() {
+    public LinkNode getHead() throws Exception {
         return head;
     }
 
-    public LinkNode getTail() {
+    public LinkNode getTail() throws Exception {
         return tail;
     }
 
@@ -26,7 +26,7 @@ public class SinglyLinkedList {
      * pre: none
      * post: a new node is inserted at the front of the list
      */
-    public void insertAtFront(Currency data) {
+     public void insertAtFront(Currency data) throws Exception {
         LinkNode newNode = new LinkNode(data);
         if (head == null) {
             head = newNode;
@@ -42,7 +42,7 @@ public class SinglyLinkedList {
      * pre: none
      * post: a new node is inserted at the back of the list
      */
-    public void insertAtBack(Currency data) {
+    public void insertAtBack(Currency data) throws Exception {
         LinkNode newNode = new LinkNode(data);
         if (head == null) {
             head = newNode;
@@ -53,7 +53,7 @@ public class SinglyLinkedList {
         count++;
     }
 
-    protected void deleteAtFront() {
+    public void deleteAtFront() throws Exception {
         if (head == null) {
             throw new IndexOutOfBoundsException("List is empty");
         } else {
@@ -62,7 +62,7 @@ public class SinglyLinkedList {
         }
     }
 
-    protected void deleteAtBack() {
+    public void deleteAtBack() throws Exception {
         if (head == null) {
             throw new IndexOutOfBoundsException("List is empty");
         } else if (count == 1) {
@@ -84,7 +84,7 @@ public class SinglyLinkedList {
      * pre: none
      * post: a new node is inserted at the specified position in the list
      */
-    public void insertAtPosition(Currency data, int position) {
+    public void insertAtPosition(Currency data, int position) throws Exception {
         if (position < 0 || position > count) {
             throw new IndexOutOfBoundsException("Invalid position");
         } else if (position == 0) {
@@ -103,7 +103,7 @@ public class SinglyLinkedList {
         }
     }
 
-    public Currency deleteAtPosition(int position) {
+    public Currency deleteAtPosition(int position) throws Exception {
         Currency deleted;
 
         if (position < 0 || position >= count) {
@@ -129,35 +129,16 @@ public class SinglyLinkedList {
     }
 
 
-    public Currency delete(Currency currency) {
-        LinkNode current = head;
-        LinkNode previous = null;
-        while (current != null) {
-            boolean isEquals;
-            try {
-                isEquals = current.getData().isEquals(currency);
-            } catch (Exception e) {
-                continue;
-            }
-            if (isEquals) {
-                if (previous == null) {
-                    deleteAtFront();
-                } else {
-                    Currency deleted = current.getData();
-                    previous.setNext(current.getNext());
-                    count--;
-                    return deleted;
-                }
-                break;
-            }
-            previous = current;
-            current = current.getNext();
+    public Currency delete(Currency currency) throws Exception {
+        int index = find(currency);
+        if (index != -1) {
+            return deleteAtPosition(index);
         }
 
         return null;
     }
 
-    public int find(Currency currency) {
+    public int find(Currency currency) throws Exception {
         LinkNode current = head;
         int position = 0;
         while (current != null) {
@@ -176,7 +157,7 @@ public class SinglyLinkedList {
         return -1;
     }
 
-    public Currency getCurrency(int index) {
+    public Currency getCurrency(int index) throws Exception {
         if (index < 0 || index >= count) {
             throw new IndexOutOfBoundsException("Invalid position");
         } else {
@@ -188,7 +169,7 @@ public class SinglyLinkedList {
         }
     }
 
-    public String printList() {
+    public String printList() throws Exception {
         StringBuilder result = new StringBuilder();
         LinkNode current = head;
         while (current != null) {
@@ -196,7 +177,6 @@ public class SinglyLinkedList {
             result.append("\t");
             current = current.getNext();
         }
-
         return result.toString();
     }
 
@@ -204,7 +184,21 @@ public class SinglyLinkedList {
         return head == null;
     }
 
-    public int countCurrency(){
+    public int countCurrency( Currency currency){
+        int count = 0;
+        LinkNode current = head;
+        while (current != null) {
+            boolean isEquals;
+            try {
+                isEquals = current.getData().isEquals(currency);
+            } catch (Exception e) {
+                continue;
+            }
+            if (isEquals) {
+                count++;
+            }
+            current = current.getNext();
+        }
         return count;
     }
 }
