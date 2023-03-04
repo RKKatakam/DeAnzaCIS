@@ -4,15 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="early version of Main finished">
+    <list default="true" id="3c1b6544-d75e-47e8-893a-aaea6d1b1d61" name="Changes" comment="Finished everything">
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/Lab 4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/BSTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/BSTTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/Krone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/LinkNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/Main_lab4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/Lab 4/src/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/partnerLab4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/BSTNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/Krone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/LinkNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/Main_lab4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CIS22C/partnerLab4/src/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/QueueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/SinglyLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CIS22C/src/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CIS22C/src/StackTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -54,8 +68,9 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kittu/OneDrive/Desktop/lab3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kittu/IdeaProjects/DeAnza/CIS22C/partnerLab4/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -69,6 +84,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kittu\IdeaProjects\DeAnza\CIS22C\partnerLab4\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kittu\IdeaProjects\DeAnza\CIS22C\src" />
     </key>
@@ -78,57 +96,58 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main_lab4 (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="CIS22C" />
+      <module name="Lab 4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="CIS22C" />
+    <configuration name="Main_lab4 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main_lab4" />
+      <module name="Lab 4" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CIS22C" />
+    <configuration name="Main_lab4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main_lab4" />
+      <module name="partnerLab4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BSTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab 4" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QueueTest" />
+      <option name="MAIN_CLASS_NAME" value="BSTTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.insertAtBack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CIS22C" />
+    <configuration name="BSTTest.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab 4" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="insertAtBack" />
+      <option name="MAIN_CLASS_NAME" value="BSTTest" />
+      <option name="METHOD_NAME" value="search" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CIS22C" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StackTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.insertAtBack" />
-        <item itemvalue="JUnit.StackTest" />
-        <item itemvalue="JUnit.QueueTest" />
+        <item itemvalue="Application.Main_lab4 (1)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main_lab4" />
+        <item itemvalue="JUnit.BSTTest" />
+        <item itemvalue="JUnit.BSTTest.search" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +165,12 @@
       <workItem from="1676324116550" duration="80000" />
       <workItem from="1676416302681" duration="4446000" />
       <workItem from="1676486460173" duration="2236000" />
-      <workItem from="1676505788802" duration="4162000" />
+      <workItem from="1676505788802" duration="4394000" />
+      <workItem from="1677108902134" duration="18000" />
+      <workItem from="1677791406160" duration="6066000" />
+      <workItem from="1677869177107" duration="5678000" />
+      <workItem from="1677893715039" duration="2450000" />
+      <workItem from="1677960063612" duration="1366000" />
     </task>
     <task id="LOCAL-00001" summary="first Commit">
       <created>1675998705843</created>
@@ -176,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676062744760</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished everything">
+      <created>1676511018475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676511018475</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +229,7 @@
     <MESSAGE value="Finished SinglyLinkedList and the Tests" />
     <MESSAGE value="Fixed SinglyLinkedTest bugs" />
     <MESSAGE value="early version of Main finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="early version of Main finished" />
+    <MESSAGE value="Finished everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished everything" />
   </component>
 </project>

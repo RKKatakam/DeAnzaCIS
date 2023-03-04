@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CIS22C/CIS22C.iml" filepath="$PROJECT_DIR$/CIS22C/CIS22C.iml" />
       <module fileurl="file://$PROJECT_DIR$/DeAnza.iml" filepath="$PROJECT_DIR$/DeAnza.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS22C/Lab 4/Lab 4.iml" filepath="$PROJECT_DIR$/CIS22C/Lab 4/Lab 4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS22C/partnerLab4/partnerLab4.iml" filepath="$PROJECT_DIR$/CIS22C/partnerLab4/partnerLab4.iml" />
     </modules>
   </component>
 </project>
