@@ -8,10 +8,17 @@ public class BST {
 
     private BSTNode root;
     private int count;
+    private PrintStream out;
 
     public BST() {
         root = null;
         count = 0;
+
+        try {
+            out = new PrintStream(new FileOutputStream("output.txt", false));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /*Fucntion - isEmpty - checks if the tree is empty
@@ -320,13 +327,6 @@ public class BST {
     public void output(String msg, boolean printToFile) {
         System.out.println(msg);
         if (printToFile) {
-            PrintStream out = null;
-            try {
-                out = new PrintStream(new FileOutputStream("./output.txt", true));
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            }
-            assert out != null;
             out.println(msg); //PrintStream object
         }
 
