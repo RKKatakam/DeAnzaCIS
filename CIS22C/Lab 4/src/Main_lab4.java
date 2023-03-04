@@ -138,7 +138,7 @@ Kr 151.00
                     tree.print4traversals(tree.getRoot(), false);
                     break;
                 case 5:
-                    tree.print4traversals(tree.getRoot(), false);
+                    tree.print4traversals(tree.getRoot(), true);
                     System.out.println("\nLeaving this program. Bye.");
                     sc.close();
                     isUserDone = true; //leaving

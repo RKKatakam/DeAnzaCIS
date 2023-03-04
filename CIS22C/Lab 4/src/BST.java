@@ -45,21 +45,15 @@ public class BST {
      * post - returns the node with the given key or null if not found
      */
     public Currency search(Krone krone) {
-        if (root == null) {
-            return null;
-        }
+        BSTNode current = root;
 
-        if (root.getData().isEquals(krone)) {
-            return root.getData();
-        }
-
-        while (root != null) {
-            if (root.getData().isEquals(krone)) {
-                return root.getData();
-            } else if (root.getData().getValue() - krone.getValue() > 0) {
-                root = root.getLeftChild();
+        while (current != null) {
+            if (current.getData().isEquals(krone)) {
+                return current.getData();
+            } else if (current.getData().getValue() - krone.getValue() > 0) {
+                current = current.getLeftChild();
             } else {
-                root = root.getRightChild();
+                current = current.getRightChild();
             }
         }
 
@@ -328,6 +322,7 @@ public class BST {
         System.out.println(msg);
         if (printToFile) {
             out.println(msg); //PrintStream object
+            out.flush();
         }
 
     }
